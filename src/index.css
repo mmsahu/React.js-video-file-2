@@ -1,0 +1,62 @@
+:root{
+  --cell-size: 34px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background: #000;
+  color:#fff;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+.app{
+  padding:16px;
+}
+.controls{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  margin-bottom:12px;
+  flex-wrap:wrap;
+}
+.controls input[type=number]{
+  width:80px;
+  padding:6px 8px;
+  border-radius:6px;
+  border:1px solid #333;
+  background:#111;
+  color:#fff;
+}
+.controls button{
+  padding:8px 12px;
+  border-radius:6px;
+  border:0;
+  background:#222;
+  color:#fff;
+  cursor:pointer;
+}
+.grid{
+  display:grid;
+  gap:4px;
+  background:transparent;
+  width:fit-content;
+  margin-top:10px;
+}
+.cell{
+  width:var(--cell-size);
+  height:var(--cell-size);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:11px;
+  font-weight:700;
+  border-radius:4px;
+  background:#0b0b0b;
+  border:1px solid #111;
+  color:#ddd;
+}
+.cell.green{ background: #05c84b; color:#000; font-weight:800; }
+.cell.red{ background: #d61b3f; color:#fff; }
+.cell.blue{ background: #2753ff; color:#fff; }
+.cell.black{ background: #070707; color:#666; }
+.note{ margin-top:10px; color:#aaa; font-size:13px; }
